@@ -4,7 +4,7 @@ metadata:
   name: myapp-argo-application
   namespace: argocd
   annotations:
-    notifications.argoproj.io/subscribe.on-deployed.slack: argocd-deploy-dev
+    notifications.argoproj.io/subscribe.on-deployed.slack: argocd-deploy-test
 spec:
   project: default
 
