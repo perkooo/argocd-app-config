@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: myapp2-argo-application
+  name: myapp-argo-application
   namespace: argocd
   annotations:
     notifications.argoproj.io/subscribe.on-deployed.slack: argocd-deploy-test
@@ -14,7 +14,7 @@ spec:
     path: test
   destination: 
     server: https://kubernetes.default.svc
-    namespace: myapp
+    namespace: myapp-test
 
   syncPolicy:
     syncOptions:
