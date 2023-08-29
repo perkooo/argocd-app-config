@@ -10,7 +10,7 @@ spec:
 
   source:
     repoURL: https://github.com/perkooo/argocd-app-config.git
-    targetRevision: refs/tag/test
+    targetRevision: refs/tags/test
     path: test
   destination: 
     server: https://kubernetes.default.svc
